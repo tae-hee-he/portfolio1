@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bolina';
+  src: url(Bolina.otf);
+}
+*{
+  font-family: 'Pretendard-Regular';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #0638D9;
+}
+
+.path {
+  fill: none;
+  stroke: #f2f2f2;
+  stroke-width: 2px;
+}
+.content1{
+  height:120vh;
+  margin-bottom:150px;
+  justify-content: space-around;
+    display: flex;
+  background-color:  #0638D9;
+}
+.content1>div>h1{
+  padding: 60px 0px;
+  display: block;
+  line-height: 1.2;
+  word-break: keep-all;
+    font-size: 100px;
+    font-weight: 400;
+    color: #fff;   
+}
+
+.contain{
+  animation: floating 3s infinite linear;
+}
+.sub-title1{
+  color: #fff;
+padding: 24px 0px;
+}
+.sub-title{
+  padding: 24px 0px;
+}
+.sub-title1>p{
+  color: #fff;
+  padding: 6px 0px;
+}
+.sub-title>p{
+  color: #fff;
+  padding: 3px 0px;
+}
+.skills>p{ 
+margin: 0px 0px 20px 0px;
+}
+.sub-title>div>span{
+  color: #fff;
+  border-radius: 25px;
+  border: solid 1px #fff;
+  padding: 10px 12px;
+  margin: 0px 2px;
+}
+.sub-title>p:first-child{
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+.sub-title1>p:first-child{
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+.category{
+  background: radial-gradient(circle, rgb(5, 16, 53) 0%,rgba(6,56,217,1)39%);
+    height: 130vh;
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    padding-bottom: 200px;
+}
+
+@keyframes gradient {
+  0% {
+   background-position: 0% 50%;
+  }
+  50% {
+   background-position: 100% 50%;
+  }
+  100% {
+   background-position: 0% 50%;
+  }
+}
+
+.category>a{
+    color: #0638D9;
+    text-decoration: none;
+}
+.category>a>div>.cate-txt>.title>h2{
+  font-size: 55px;
+  font-weight: 900;
+}
+.category>a>div{
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.33);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+    height: 32%;
+    margin: 40px;
+}
+.category>a>div:hover{
+  background-color: #fff;
+  transition: 0.4s ease-in-out;
+}
+.category>a>div:hover>.img-container>img{
+  opacity: 0.8;
+}
+.guide{
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space:nowrap;
+}
+.guide>p:first-child{
+  font-size: 20px;
+}
+.line_lr{
+  display:flex;
+  flex-basis:100%;
+  align-items:center;
+  color:#ffffff;
+  font-size:16px;
+}
+.line_lr::before{
+  content:"";
+  flex-grow:1;
+  margin:0px 10px;
+  background:#ffffff;
+  height:1px;
+  display:inline-block;
+}
+.category>div:first-child{
+
+color: #fff;
+    height: 7%;
+}
+.cate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+.cate-txt{
+  width: 58%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 4px 10vw 4px 0px;
+}
+.sub-txt{
+  color: #000;
+  word-break: keep-all;
+}
+.sub-txt>p:last-child{
+  font-size: 14px;
+  padding-top: 12px;
+}
+.img-container{
+padding: 20px 0px;
+    width: 42%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.img-container>img{
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+}
+
+
+@keyframes drawPath1 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1712;
+  }
+}
+@keyframes floating {
+  50% {
+    transform: translate3d(0, 40px, 0);
+  }
+}
+
+@media (max-width: 900px)  {
+  .content1>div>h1{
+    padding: 60px 0px;
+    display: block;
+      font-size: 40px;
+      font-weight: 400;
+      color: #fff;   
+  }
+  .contain{
+    display: none;
+  }
+}
+
+.animated-title {
+  font-size:120px; 
+  font-family: 'bolina' !important;
+  font-weight:300; 
+  position:relative; 
+  width: 100%;
+  max-width:100%; 
+  height: auto; 
+  padding:120px 0 200px 0px; 
+  overflow-x: hidden; 
+
+}
+
+.animated-title .track {
+  font-family: 'bolina' !important;
+  display: flex;
+  position: absolute; 
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 40s linear infinite;
+  color: #ffffffb1; 
+}
+.content{
+  font-family: 'bolina' !important;
+  letter-spacing:0.04em;
+}
+@keyframes marquee {
+  from { 
+    transform: translateX(0); 
+  }
+  to { 
+    transform: translateX(-50%); 
+  }
+}
